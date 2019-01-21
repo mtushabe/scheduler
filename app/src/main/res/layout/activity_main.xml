@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:text="Lufthansa Schedules"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/origin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your origin"/>
+
+
+        <EditText
+            android:id="@+id/destination"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/origin"
+            android:hint="Enter your destination"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/load"
+            android:layout_below="@id/destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:text="@string/load_button"/>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
